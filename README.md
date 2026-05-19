@@ -12,15 +12,15 @@
 
 Quand on lançait le carton sur le convoyeur, **le tapis ne s'arrêtait pas en fin de course**.
 
-Le carton continuait de forcer jusqu'au bout du tapis et tombait par terre. Et une fois en bout de course, impossible de le faire repartir dans l'autre sens sans qu'il tombe de l'autre côté.
+Le carton continuait de forcer jusqu'au bout du tapis et tombait par terre. Et une fois en bout de course, impossible de le faire repartir dans l'autre sens.
 
 ---
 
 ## 🔍 La cause
 
-Dans Control I/O, les deux boutons de commande (gauche et droite) étaient branchés sur le **même canal moteur**.
+Dans Control I/O, les capteurs et les sens de marche étaient **croisés** : chaque bouton envoyait le carton vers un côté, mais sa sécurité d'arrêt écoutait le capteur du côté **opposé**.
 
-Résultat : quand un capteur détectait le carton et tentait de couper le moteur, le signal de l'autre bouton maintenait le moteur actif. **Le tapis ne s'arrêtait jamais.**
+Résultat : le carton arrivait sur le bon capteur, mais ce capteur n'était pas relié à la ligne de commande active. **Personne ne coupait le moteur, et le carton tombait.**
 
 ---
 
