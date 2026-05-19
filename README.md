@@ -69,5 +69,5 @@ Après correction, les boutons physiques du pupitre ont été **permutés** pour
 | Fichier | Description |
 |:---|:---|
 | `ERREUR_INVERSION_PROJET_1.mp4` | Vidéo du bug avant correction |
-| `Capture_d_écran_ERREUR_INVERSION.png` | Diagramme Control I/O — état bugué |
-| `Capture_d_écran_2026-05-19.png` | Diagramme Control I/O — état corrigé |
+| `diagramme-erreur.png` | Diagramme Control I/O — état bugué |
+| `diagramme-correction.png` | Diagramme Control I/O — état corrigé |
